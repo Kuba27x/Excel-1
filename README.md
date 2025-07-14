@@ -1,66 +1,158 @@
-#Excel-1
+# 📊 Excel-1
 
-A range in Excel is a collection of two or more cells. To fill a range select cell with value or cells with pattern and click on the lower right corner of that cell and drag it down. Excel automatically fills the range based on the pattern of the first two values.
-To move a range, select a range and click on the border of the range then drag the range to its new location. You can insert/delete rows/columns by right clicking them and selecting insert/delete. 
-You can change the width of a column by clicking and dragging the right border of the column header. To automatically fit the widest entry in a column, double click the right border of a column header. It also works for rows; double click bottom border of a row header.
+![Status](https://img.shields.io/badge/status-active-brightgreen.svg)
+![Excel](https://img.shields.io/badge/Microsoft-Excel-blue.svg)
 
-AutoFit
+## ✨ Project Description
 
-![screenshot](Screenshots/AutoFit.png)
-Original column width.
+**Excel-1** is a guide to advanced features and tricks in Microsoft Excel. Here you'll find practical tips, instructions, and illustrations about working with ranges, Auto Fill, custom lists, Flash Fill, and modern formulas such as `TEXTSPLIT` and `SEQUENCE`.
 
-![screenshot](Screenshots/AutoFitResult.png)
-To automatically fit the widest entry in a column, double click the right border of a column header.
+> 📚 **Goal:** Help you use Excel more efficiently every day—suitable for both beginners and advanced users!
 
-Auto Fill
+---
 
-![screenshot](Screenshots/AutoFill.png)
-Here is an example of Autofill based on pattern, hour and date.
+## 📒 Table of Contents
 
-![screenshot](Screenshots/AutoFillOptions.png)
-Available options of date AutoFill.
+- [Ranges in Excel](#-ranges-in-excel)
+- [AutoFit (Automatic Column Width)](#-autofit-automatic-column-width)
+- [Auto Fill](#-auto-fill)
+- [Custom Auto Fill List](#-custom-auto-fill-list)
+- [Flash Fill](#-flash-fill)
+- [TEXTSPLIT Function](#-textsplit-function)
+- [SEQUENCE Function](#-sequence-function)
+- [📷 Screenshots](#-screenshots)
+- [ℹ️ Requirements](#-requirements)
+- [👨‍💻 Author](#-author)
 
-![screenshot](Screenshots/AutoFillResult.png)
-Result of filling by months.
+---
 
-Custom list Auto Fill
+## 🔲 Ranges in Excel
 
-It is possible to create your own list to easily fill a range in Excel. Here is how to do it.
+A range in Excel is a group of two or more cells.  
+To fill a range:
+1. Select a cell with a value or formula.
+2. Grab the small square in the bottom right corner and drag it.
 
-![screenshot](Screenshots/Settings.png)
-On the File tab click Options, under Advanded go to General and click Edit Custom Lists.
+> 📝 **Tip:** When you drag, Excel automatically recognizes patterns (formulas/numbers/dates) and extends them.
 
-![screenshot](Screenshots/CustomList.png)
-Add your list here.
+To move a range:
+- Select the range, click its border, and drag it to a new location.
 
-![screenshot](Screenshots/CustomListResult.png)
-Type London in cell P1 then click on the lower right corner of cell P1 and drag it down. Effect above. (Note: Custom lists are stored in computer`s registry so they can be used in other workbooks)
+To insert/delete rows or columns:
+- Right-click the row/column header and choose _Insert/Delete_.
 
-Flash Fill
+To change column width:
+- Drag the right edge of the header.
+- Double-click the edge to auto fit to the longest content.
 
-![screenshot](Screenshots/FlashFill.png)
-Here we are trying to use Flash Fill to create emails based on pattern. 
+---
 
-![screenshot](Screenshots/FlashFillResult.png)
-Select cell C8 and press CTRL + E (Flash Fill shortcut). Result above.
+## ↔️ AutoFit (Automatic Column Width)
 
-![screenshot](Screenshots/FlashFill2.png)
-Another example. Split contents of one cell into multiple cells.
+![AutoFit](Screenshots/AutoFit.png)
+*Initial column width.*
 
-![screenshot](Screenshots/FlashFillResult2.png)
-Press CTRL + E in each column. (Note: flash fill in Excel only works when it recognizes a pattern.)
+![AutoFitResult](Screenshots/AutoFitResult.png)
+*AutoFit to the longest entry.*
 
-It is important to know that output received using Flash Fill will not automatically update when the source data changes. When you know source data will change use formulas instead.
+To automatically fit column width to its content, **double-click** the right edge of the column header.
 
-TEXTSPLIT
+---
 
-![screenshot](Screenshots/Textsplit.png)
-Instead of using Flash Fill you can use TEXTSPLIT(text; col_delimiter) formula as shown above. (Note: TEXTSPLIT is only available in Excel365/Excel2021) (Note: TEXTSPLIT fills multiple cells. This is called spilling in Excel365/2021)
+## 🔄 Auto Fill
 
-SEQUENCE
+![AutoFill](Screenshots/AutoFill.png)
+*Example of auto-filling formulas, times, and dates.*
 
-![screenshot](Screenshots/Sequence.png)
-Here we use SEQUENCE(rows;columns;start;step) to fill multiple cells. (Note: SEQUENCE is only available in Excel365/Excel2021) (Note: SEQUENCE fills multiple cells. This is called spilling in Excel365/2021)
+![AutoFillOptions](Screenshots/AutoFillOptions.png)
+*Auto Fill options for dates.*
 
+![AutoFillResult](Screenshots/AutoFillResult.png)
+*Result of filling months.*
 
+---
 
+## 📝 Custom Auto Fill List
+
+You can create your own list for quick auto-filling.
+
+1. File → Options → Advanced → General → **Edit Custom Lists**.
+
+![Settings](Screenshots/Settings.png)
+
+![CustomList](Screenshots/CustomList.png)
+*Add your own list here.*
+
+![CustomListResult](Screenshots/CustomListResult.png)
+*Effect: type e.g. "London" in a cell, drag, and the list will fill automatically.*
+
+> ℹ️ **Note:** Custom lists are stored in the system registry and can be used in other workbooks.
+
+---
+
+## ⚡ Flash Fill
+
+![FlashFill](Screenshots/FlashFill.png)
+*Creating emails from a pattern.*
+
+1. Type an example result next to your data.
+2. Select the cell and press **CTRL + E** (Flash Fill shortcut).
+
+![FlashFillResult](Screenshots/FlashFillResult.png)
+*Flash Fill in action.*
+
+![FlashFill2](Screenshots/FlashFill2.png)
+*Splitting one cell into several.*
+
+![FlashFillResult2](Screenshots/FlashFillResult2.png)
+*Final result—press CTRL+E in each column.*
+
+> ⚠️ **Remember:** Flash Fill results do not update automatically if source data changes. For dynamic results, use formulas!
+
+---
+
+## 🧩 TEXTSPLIT Function
+
+![Textsplit](Screenshots/Textsplit.png)
+
+Instead of Flash Fill, you can use this formula:
+```excel
+=TEXTSPLIT(text, column_separator)
+```
+- Available only in Excel 365/2021!
+- Fills multiple cells at once (spilling).
+
+---
+
+## 🔢 SEQUENCE Function
+
+![Sequence](Screenshots/Sequence.png)
+
+This function generates a sequence of numbers:
+```excel
+=SEQUENCE(rows, columns, start, step)
+```
+- Only in Excel 365/2021!
+- Fills multiple cells at once.
+
+---
+
+## 📷 Screenshots
+
+You can find all screenshots in the `/Screenshots` folder.
+
+---
+
+## ℹ️ Requirements
+
+- Microsoft Excel (recommended: 2021/365 for modern formulas)
+- Windows OS (for custom lists)
+
+---
+
+## 👨‍💻 Author
+
+Project and documentation by **Kuba27x**  
+Repository: [Kuba27x/Excel-1](https://github.com/Kuba27x/Excel-1)
+
+---
