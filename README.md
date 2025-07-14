@@ -14,15 +14,15 @@
 ## 📒 Table of Contents
 
 - [Ranges in Excel](#-ranges-in-excel)
-- [AutoFit (Automatic Column Width)](#-autofit-automatic-column-width)
+- [AutoFit](#-autofit)
 - [Auto Fill](#-auto-fill)
 - [Custom Auto Fill List](#-custom-auto-fill-list)
 - [Flash Fill](#-flash-fill)
 - [TEXTSPLIT Function](#-textsplit-function)
 - [SEQUENCE Function](#-sequence-function)
-- [📷 Screenshots](#-screenshots)
-- [ℹ️ Requirements](#-requirements)
-- [👨‍💻 Author](#-author)
+- [Screenshots](#-screenshots)
+- [Requirements](#-requirements)
+- [Author](#-author)
 
 ---
 
@@ -47,7 +47,7 @@ To change column width:
 
 ---
 
-## ↔️ AutoFit (Automatic Column Width)
+## ↔️ AutoFit
 
 ![AutoFit](Screenshots/AutoFit.png)
 *Initial column width.*
@@ -156,3 +156,5 @@ Project and documentation by **Kuba27x**
 Repository: [Kuba27x/Excel-1](https://github.com/Kuba27x/Excel-1)
 
 ---
+
+> ⭐️ If you found this repository helpful—leave a star!
