@@ -14,14 +14,14 @@
 ## 📒 Table of Contents
 
 - [Ranges in Excel](#-ranges-in-excel)
-- [AutoFit](#autofit)
+- [AutoFit](#-autofit)
 - [Auto Fill](#-auto-fill)
 - [Custom Auto Fill List](#-custom-auto-fill-list)
 - [Flash Fill](#-flash-fill)
 - [TEXTSPLIT Function](#-textsplit-function)
 - [SEQUENCE Function](#-sequence-function)
-- [Screenshots](#screenshots)
-- [Requirements](#requirements)
+- [Screenshots](#-screenshots)
+- [Requirements](#-requirements)
 - [Author](#-author)
 
 ---
